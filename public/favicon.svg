@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="38%" r="75%">
+      <stop offset="0%" stop-color="#1c2740"/>
+      <stop offset="100%" stop-color="#0b0f1c"/>
+    </radialGradient>
+    <linearGradient id="crack" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f3e0bd"/>
+      <stop offset="100%" stop-color="#e7c9a3"/>
+    </linearGradient>
+  </defs>
+
+  <circle cx="32" cy="32" r="31" fill="url(#bg)"/>
+
+  <!-- clock ring, split by the crack -->
+  <circle cx="32" cy="32" r="21" fill="none" stroke="#a3c9bb" stroke-width="3.4" stroke-dasharray="94 6" />
+
+  <!-- clock hands, slightly offset to feel "broken" -->
+  <line x1="32" y1="32" x2="32" y2="17" stroke="#f1f3f8" stroke-width="3" stroke-linecap="round" transform="rotate(-8 32 32)"/>
+  <line x1="32" y1="32" x2="42" y2="34" stroke="#f1f3f8" stroke-width="3" stroke-linecap="round" transform="rotate(6 32 32)"/>
+
+  <!-- jagged crack through the whole face -->
+  <path d="M14 12 L27 24 L20 29 L34 40 L27 44 L50 58"
+        fill="none" stroke="url(#crack)" stroke-width="3.2"
+        stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- little burst sparks at the crack line -->
+  <circle cx="20" cy="29" r="2.1" fill="#e7c9a3"/>
+  <circle cx="34" cy="40" r="1.6" fill="#f3e0bd"/>
+</svg>
